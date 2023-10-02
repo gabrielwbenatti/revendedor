@@ -18,8 +18,13 @@
 |
 */
 
-import Route from '@ioc:Adonis/Core/Route'
+import Route from "@ioc:Adonis/Core/Route";
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
+Route.group(() => {
+  Route.get("formas-pagamentos", "FormasPagamentosController.index");
+  Route.post("formas-pagamentos", "FormasPagamentosController.store");
+}).prefix("api");
+
+Route.get("/", async () => {
+  return { hello: "world" };
+});
