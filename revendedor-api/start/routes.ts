@@ -21,10 +21,13 @@
 import Route from "@ioc:Adonis/Core/Route";
 
 Route.group(() => {
-  Route.get("formas-pagamentos", "FormasPagamentosController.index");
-  Route.post("formas-pagamentos", "FormasPagamentosController.store");
-}).prefix("api");
+  Route.get("/", async () => {
+    return { hello: "world" };
+  });
 
-Route.get("/", async () => {
-  return { hello: "world" };
-});
+  Route.get("/marcas", "MarcasController.index");
+  Route.post("/marcas", "MarcasController.store");
+
+  Route.get("/formas-pagamentos", "FormasPagamentosController.index");
+  Route.post("/formas-pagamentos", "FormasPagamentosController.store");
+}).prefix("api");
