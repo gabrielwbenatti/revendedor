@@ -12,6 +12,7 @@ export default class extends BaseSeeder {
       { nome: "Power Stay", idMarca: 2 },
       { nome: "Tododia", idMarca: 2 },
       { nome: "Kaiak", idMarca: 2 },
+      { nome: "Cuide-se Bem", idMarca: 1 },
     ]);
   }
 }

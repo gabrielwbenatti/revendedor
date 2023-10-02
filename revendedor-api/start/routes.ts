@@ -31,14 +31,14 @@ Route.group(() => {
   Route.get("/categorias", "CategoriasController.index");
   Route.post("/categorias", "CategoriasController.store");
 
-  Route.get("/linhas", () => {
-    return [];
-  });
   Route.get("/linhas/:idMarca", "LinhasController.index");
   Route.post("/linhas/:idMarca", "LinhasController.store");
 
   Route.get("/clientes", "ClientesController.index");
   Route.post("/clientes", "ClientesController.store");
+
+  Route.get("/produtos", "ProdutosController.index");
+  // Route.post("/produtos", "ProdutosController.store");
 
   Route.get("/formas-pagamentos", "FormasPagamentosController.index");
   Route.post("/formas-pagamentos", "FormasPagamentosController.store");
