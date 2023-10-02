@@ -28,6 +28,9 @@ Route.group(() => {
   Route.get("/marcas", "MarcasController.index");
   Route.post("/marcas", "MarcasController.store");
 
+  Route.get("/categorias", "CategoriasController.index");
+  Route.post("/categorias", "CategoriasController.store");
+
   Route.get("/formas-pagamentos", "FormasPagamentosController.index");
   Route.post("/formas-pagamentos", "FormasPagamentosController.store");
 }).prefix("api");
