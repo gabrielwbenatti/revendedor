@@ -16,4 +16,13 @@ export default class ProdutosController {
     }
     response.noContent();
   }
+
+  public async show({ params, response }: HttpContextContract): Promise<void> {
+    const produto = await Produto.findBy("id", params.id);
+    if (produto != null) {
+      response.ok(produto);
+      return;
+    }
+    response.noContent();
+  }
 }

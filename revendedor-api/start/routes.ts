@@ -39,6 +39,7 @@ Route.group(() => {
 
   Route.get("/produtos", "ProdutosController.index");
   // Route.post("/produtos", "ProdutosController.store");
+  Route.get("/produtos/:id", "ProdutosController.show");
 
   Route.get("/formas-pagamentos", "FormasPagamentosController.index");
   Route.post("/formas-pagamentos", "FormasPagamentosController.store");
