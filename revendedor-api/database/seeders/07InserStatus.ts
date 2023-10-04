@@ -9,8 +9,8 @@ export default class extends BaseSeeder {
       { nome: "Aguardando entrega" },
       { nome: "Aguardando pagamento" },
       { nome: "Pagamento parcial" },
-      { nome: "Finalizado", finalizaPedido: true },
-      { nome: "Cancelado", finalizaPedido: true },
+      { nome: "Finalizado", pedidoFechado: true },
+      { nome: "Cancelado", pedidoFechado: true },
     ]);
   }
 }

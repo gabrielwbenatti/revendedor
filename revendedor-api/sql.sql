@@ -1,18 +1,3 @@
-CREATE TABLE status (
-    id SERIAL NOT NULL,
-    nome VARCHAR(127) NOT NULL
-);
-
-INSERT INTO
-    status (nome)
-values
-    ('Em aberto'),
-    ('Pedido realizado'),
-    ('Aguardando entrega'),
-    ('Aguardando pagamento'),
-    ('Pagamento parcial'),
-    ('Finalizado');
-
 CREATE TABLE pedidos (
     id SERIAL NOT NULL,
     id_cliente INTEGER NOT NULL,

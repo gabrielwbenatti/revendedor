@@ -8,5 +8,5 @@ export default class Status extends BaseModel {
   public nome: string;
 
   @column()
-  public finalizaPedido: boolean;
+  public pedidoFechado: boolean;
 }
